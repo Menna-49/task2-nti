@@ -1,0 +1,127 @@
+
+.home-page{
+    background-image: url(../imges/background\ books\ \(2\).jpg );
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.content{
+    color: beige;
+    margin: 0 50px;
+
+}
+.content h1{
+    
+    font-family:'Merriweather', serif;
+    color:rgb(251, 251, 189);
+}  
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+  .navbar {background-color:rgb(112, 19, 19);
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    color: #C9A66B; /* Gold */
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar ul li a {
+    color: #F5F2E7; /* Beige */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    font-family: 'Lora', serif;
+  }
+
+  .navbar ul li a:hover {
+    color: #C9A66B; /* Gold accent */}
+   
+.btn{
+    bottom: 1px !important;
+}
+    .card{
+        
+        transition: transform 0.3s, box-shadow 0.3s;}
+
+    .card:hover{
+   transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(112,19,19);
+    }
+
+    .circle{
+        border-radius: 50%;
+        background-color:rgb(112,19,19);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .heading-contact h2{
+        color: rgb(112, 19, 19);
+
+    }
+  .contactInfos{
+    width: 100%;
+  }
+  .contactInfo{
+    box-sizing: border-box;
+    width: 45%;
+    background-color:#eeee;
+    margin: 10px;
+    padding: 15px;
+}
+.icns-footer a i:hover{
+    color: white !important;
+}
+
+
+#review{
+    box-sizing: border-box;
+    width: 95%;
+    background-color:#eeee;
+    margin: 10px;
+    padding: 15px;
+}
+.card-rev {
+    background-color: rgb(164, 17, 17);
+    padding: 20px;
+    margin: 10px;
+}
+.card-rev3{
+  background-color: rgb(31, 160, 14);
+    padding: 20px;
+    margin: 10px;
+}
+.card-rev2{
+  background-color: rgb(230, 230, 7);
+    padding: 20px;
+    margin: 10px;
+}
+.lists a i{
+ color: rgb(164, 17, 17);   
+}
+.lists a i:hover{
+
+color: black;
+}
