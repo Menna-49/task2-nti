@@ -1,20 +1,67 @@
-.drag-area{
+.game{
+text-align:center;
+font-family:Arial;
+padding:40px;
+}
 
+.foods{
 display:flex;
 justify-content:center;
-gap:50px;
-margin-top:40px;
+gap:30px;
+margin:40px;
+flex-wrap:wrap;
+}
 
+.food{
+width:110px;
+cursor:grab;
+transition:0.3s;
+}
+
+.food:hover{
+transform:scale(1.1) rotate(5deg);
 }
 
 .basket{
-
-width:150px;
-height:150px;
-border:3px dashed #aaa;
+width:200px;
+height:200px;
+margin:auto;
+border:4px dashed #bbb;
+border-radius:20px;
 display:flex;
 align-items:center;
 justify-content:center;
-border-radius:10px;
+font-size:24px;
+background:#fff7e6;
+transition:0.3s;
+}
 
+.basket.active{
+background:#d4f8d4;
+}
+
+#message{
+font-size:22px;
+margin-top:20px;
+}
+
+.score-board{
+font-size:20px;
+margin-top:10px;
+}
+
+.progress-bar{
+width:300px;
+height:20px;
+background:#eee;
+margin:20px auto;
+border-radius:10px;
+overflow:hidden;
+}
+
+#progress{
+height:100%;
+width:0%;
+background:#8ed081;
+transition:0.5s;
 }

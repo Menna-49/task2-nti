@@ -10,18 +10,38 @@
  
 </head>
 <body>
-<h2>Put the Food in the Basket</h2>
+<section class="game">
 
-<div class="drag-area">
+<h2>ضع الموز والتفاحه</h2>
 
-<img src="../images/apple.jpg " draggable="true" id="apple">
+<div class="foods">
 
-<div class="basket" id="basket">Basket</div>
+<img src="../images/apple.jpg" draggable="true" id="apple" class="food">
+<img src="../images/banana.jpg" draggable="true" id="banana" class="food">
+<img src="../images/burger.jpg" draggable="true" id="burger" class="food">
+<img src="../images/candy.jpg" draggable="true" id="candy" class="food">
 
 </div>
 
-<p id="basketResult"></p>
+<div class="basket" id="basket">
 
+<img src="../images/basket.png" alt="">
+</div>
+
+<p id="message"></p>
+
+<div class="score-board">
+Score: <span id="score">0</span>
+</div>
+
+<div class="progress-bar">
+<div id="progress"></div>
+</div>
+
+<audio id="correctSound" src="sounds/correct.mp3"></audio>
+<audio id="wrongSound" src="sounds/wrong.mp3"></audio>
+
+</section>
 
     <script src="../js/السله.js"></script>
 </body>

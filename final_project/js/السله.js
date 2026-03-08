@@ -1,25 +1,57 @@
-let apple=document.getElementById("apple");
-let basket=document.getElementById("basket");
+let score = 0;
+let total = 2;
 
-apple.addEventListener("dragstart",function(e){
+const foods = document.querySelectorAll(".food");
+const basket = document.getElementById("basket");
 
-e.dataTransfer.setData("food","apple");
+foods.forEach(food => {
+
+food.addEventListener("dragstart", e => {
+e.dataTransfer.setData("food", food.id);
+});
 
 });
 
-basket.addEventListener("dragover",function(e){
-
+basket.addEventListener("dragover", e => {
 e.preventDefault();
-
+basket.classList.add("active");
 });
 
-basket.addEventListener("drop",function(e){
+basket.addEventListener("dragleave", () => {
+basket.classList.remove("active");
+});
 
-let data=e.dataTransfer.getData("food");
+basket.addEventListener("drop", e => {
 
-if(data==="apple"){
+basket.classList.remove("active");
 
-document.getElementById("basketResult").innerHTML="🎉 Great Job!";
+let food = e.dataTransfer.getData("food");
+
+if(food === "apple" || food === "banana"){
+
+score++;
+
+document.getElementById("message").innerHTML = "⭐رائع ! ";
+document.getElementById("correctSound").play();
+
+document.getElementById(food).style.display="none";
+
+}else{
+
+document.getElementById("message").innerHTML = "🙂 حاول مره اخري";
+document.getElementById("wrongSound").play();
+
+}
+
+document.getElementById("score").innerHTML = score;
+
+let progress = (score/total)*100;
+
+document.getElementById("progress").style.width = progress + "%";
+
+if(score === total){
+
+document.getElementById("message").innerHTML = "🎉 انت الفائز !";
 
 }
 
