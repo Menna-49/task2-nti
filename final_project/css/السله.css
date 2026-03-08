@@ -1,0 +1,20 @@
+.drag-area{
+
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top:40px;
+
+}
+
+.basket{
+
+width:150px;
+height:150px;
+border:3px dashed #aaa;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+
+}

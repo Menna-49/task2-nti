@@ -1,0 +1,22 @@
+.choices{
+
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+
+}
+
+.choices img{
+
+
+cursor:pointer;
+transition:0.3s;
+
+}
+
+.choices img:hover{
+
+transform:scale(1.1);
+
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle Layout</title>
+<link rel="stylesheet" href="../css/animal_sound.css">
+<link rel="stylesheet" href="../css/all.min.css">
+ <link rel="stylesheet" href="../css/bootstrap.min.css">
+ 
+</head>
+<body class="">
+<section class="game text-center py-5 p-3">
+
+<h2 class="text-center">  اي من هذه الحيوانات لديه هذا الصوت </h2>
+<audio id="cowSound">
+<source src="../Audios/cow_audio.mp3" type="audio/mpeg">
+</audio>
+<button class="m-5 p-3  " onclick="playSound()">🔊 تشغيل الصوت </button>
+
+<div class="animals ">
+
+<img src="../images/caw.jpg" onclick="checkAnimal('cow')">
+<img src="../images/cat.jpg" onclick="checkAnimal('cat')">
+<img src="../images/dog.jpg" onclick="checkAnimal('dog')">
+
+</div>
+
+<p id="result2"></p>
+
+</section>
+
+    <script src="../js/animal_sound.js"></script>
+</body>

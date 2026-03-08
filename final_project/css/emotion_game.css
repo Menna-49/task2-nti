@@ -1,0 +1,22 @@
+
+.game{
+text-align:center;
+font-family:Arial;
+padding:40px;
+}
+
+.choices button{
+padding:15px 30px;
+margin:10px;
+font-size:18px;
+border:none;
+border-radius:10px;
+background:#b7e3d4;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+background:#9ed7c3;
+}

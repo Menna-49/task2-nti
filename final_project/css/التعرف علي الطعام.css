@@ -1,0 +1,22 @@
+.foods{
+
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+
+}
+
+.foods img{
+
+
+cursor:pointer;
+transition:0.3s;
+
+}
+
+.foods img:hover{
+
+transform:scale(1.1);
+
+}
